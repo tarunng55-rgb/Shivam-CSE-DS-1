@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>REGISTRATION</title>
+    </head>
+    <body>
+        <center>
+            <h1>Student Registration Form</h1>
+            <form action="/register" method="post">
+                <label for="name"><b>Student Name:</b></label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="id"><b>Admission No.:</b></label>
+                <input type="text" id="id" name="id" required><br><br>
+
+                <label for="dob"><b>Date of Birth:</b></label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="email"><b>Email id:</b></label>
+                <input type="email" id="email" name="email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Enter a valid email address (e.g., user@example.com)"><br><br>
+
+                <lable for="phone"><b>Phone Number:</b></label>
+                <input type="tel" id="phone" name="phone" required
+                    pattern="[0-9]{10}" value="+91"
+                    title="Enter a 10-digit phone number"><br><br>
+
+                <label for="gender"><b>Gender:</b></label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value ="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="department"><b>Department:</b></label>
+                <input type="checkbox" id="cse" name="department" value="CSE">
+                <label for="cse"> CSE</label>
+                <input type="checkbox" id="ece" name="department" value="ECE">
+                <label for="ece"> ECE</label>
+                <input type="checkbox" id="ELCE" name="department" value="ELCE">
+                <label for="ELCE"> ELCE</label>
+                <input type="checkbox" id="mech" name="department" value="MECH">
+                <label for="mech"> MECH</label><br><br>
+
+                <label for="courses"><b>Courses Enrolled:</b></label>
+                <select name="courses" id="courses">
+                    <option>Select current course</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Core">Core</option>
+                    <option value="AIML">AIML</option>
+                </select><br><br>
+
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" name="password" required><br><br>
+            
+                <input type="submit" value="Register">
+            </form>
+            </center>
+    </body>
+</html>

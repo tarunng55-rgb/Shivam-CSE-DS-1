@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>BOOKING</title>
+    </head>
+    <body style="background-color: aquamarine;">
+        <center>
+            <h1>Hotel Room Booking Form</h1>
+            <form action="/book" method="post">
+                <label for="name">Full Name :</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email :</label>
+                <input type="text" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Enter a valid email address (e.g., user@example.com)"><br><br>
+
+                <label for="phone">Phone number :</label>
+                <input type="text" id="phone" name="phone" required
+                pattern="[0-9]{10}" value="+91"
+                title="Enter a 10-digit phone number"><br><br>
+
+                <lable for="checkin">Check-in-Date :</lable>
+                <input type="date" id="checkin" name="checkin" required><br><br>
+
+                <lable for="checkout">Check-out-Date :</lable>
+                <input type="date" id="checkout" name="checkout" required><br><br>
+
+                <lable for="room">Room Type :</lable>
+                <select name="room" id="room">
+                    <option>Select Room Type</option>
+                    <option value="Single">Single Room</option>
+                    <option value="Double">Double Room</option>
+                    <option value="Suite">Suite</option>
+                    <option value="Deluxe">Deluxe Room</option>
+                    <option value="Villa">Villa</option>
+                </select><br><br>
+
+                <lable for="guests">No. of Guests :</lable>
+                <input type="number" id="guests" name="guests" min="1" max="20" required><br><br>
+
+                <lable for="requests">Special Requests :</lable><br>
+                <textarea name="Message" rows="8" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Book now">
+                <input type="reset" value="Reset">
+            </form>
+        </center>
+    </body>
+</html>

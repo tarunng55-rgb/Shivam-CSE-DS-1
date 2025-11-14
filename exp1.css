@@ -1,0 +1,127 @@
+/* Base layout */
+:root{
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --accent: #1f6feb;
+    --muted: #6b7280;
+    --text: #0f1724;
+    --radius: 10px;
+    --max-width: 900px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+    padding:32px 16px;
+}
+
+/* Page container */
+body > main, .page {
+    max-width:var(--max-width);
+    margin:0 auto;
+    background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.98));
+    border-radius:var(--radius);
+    padding:28px;
+    box-shadow:0 6px 20px rgba(15,23,36,0.06);
+}
+
+/* Headings */
+h1{
+    margin:0 0 6px 0;
+    font-size:28px;
+    text-align:center;
+    color:var(--accent);
+}
+h2{
+    margin:4px 0 18px 0;
+    font-size:18px;
+    font-style:italic;
+    text-align:center;
+    color:var(--muted);
+}
+h3{
+    margin:8px 0 10px 0;
+    font-size:16px;
+    color:#0b4b8a;
+}
+
+/* Paragraph */
+p{
+    color:var(--muted);
+    margin:0 0 20px 0;
+}
+
+/* Ordered list (semesters) */
+ol{
+    padding-left:20px;
+    margin:0 0 16px 0;
+}
+ol > li{
+    margin:12px 0 20px 0;
+}
+
+/* Course list */
+ul{
+    padding-left:18px;
+    margin:8px 0;
+}
+li > b{
+    display:block;
+    font-size:15px;
+    margin-bottom:6px;
+    color:#0b3a66;
+}
+
+/* Definition list styling for course meta */
+dl{
+    margin:6px 0 14px 0;
+    padding:10px 12px;
+    background:linear-gradient(180deg, rgba(240,246,255,0.6), rgba(255,255,255,0.6));
+    border-radius:8px;
+    border:1px solid rgba(15,111,255,0.06);
+}
+dt{
+    font-weight:700;
+    font-size:13px;
+    color:#123a5a;
+    margin:4px 0;
+}
+dd{
+    margin:6px 0 0 0;
+    padding-left:12px;
+    color:var(--muted);
+}
+
+/* Inner key topics list */
+dl dd ul{
+    list-style: disc;
+    padding-left:18px;
+    margin:6px 0;
+}
+
+/* Small utility */
+.course-meta{
+    font-size:13px;
+    color:var(--muted);
+}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+    body{padding:18px 10px}
+    body > main, .page{padding:18px}
+    h1{font-size:22px}
+    h3{font-size:15px}
+}
+
+/* Accessibility: high-contrast focus outlines for keyboard users */
+a:focus, button:focus, [tabindex]:focus{
+    outline:3px solid rgba(31,111,235,0.18);
+    outline-offset:2px;
+}

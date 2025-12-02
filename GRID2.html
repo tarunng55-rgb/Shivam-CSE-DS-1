@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID - Updated Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, sans-serif;
+            background-color: #e3f4ff;
+        }
+
+        .grid-box {
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+
+            grid-template-columns: 220px 2fr 1fr;
+            grid-template-rows: 90px 1fr 70px;
+
+            grid-template-areas:
+                "header header header"
+                "left content side"
+                "footer footer footer";
+
+            background-color: #e6e7ea;
+            border: 8px solid #6a1f29;
+            gap: 12px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #5ca9d6;
+            color: #fff;
+            font-size: 34px;
+            text-align: center;
+            padding-top: 20px;
+            border-bottom: 4px solid #cee3ff;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: #7da3d4;
+            border: 3px solid #e6ffd5;
+            padding: 18px;
+            font-size: 18px;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #f2edc3;
+            border: 3px solid #fff7c8;
+            padding: 18px;
+            font-size: 18px;
+        }
+
+        .side {
+            grid-area: side;
+            background-color: #eeb9c4;
+            border: 3px solid #3a1d00;
+            padding: 18px;
+            font-size: 18px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #1a3324;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 4px solid #b8daff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="grid-box">
+        <div class="header">LIPKART</div>
+        <div class="left">MENU</div>
+        <div class="content">LIPS RELATED</div>
+        <div class="side">HELP</div>
+        <div class="footer">BACK</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARVEL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #1a1a1a;
+      padding: 20px;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f1eeee;
+      border-color: #ff0000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #2b2b2b;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+      padding: 16px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin: 8px 0;
+      color: #ffcc00;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+      margin: 4px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #00aaff;
+    }
+
+    @media (max-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2><img src="https://wallpapercave.com/wp/wp9012253.jpg" alt="Marvel Studios" style="width:300px;"></h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://wallpaperaccess.com/full/335882.jpg" alt="SUIT">
+      <h3>SPOIDERMAN</h3>
+      <p>WITH GREAT POWER COMES GREAT RESPONSIBILITY</p>
+      <p class="price">₹500K</p>
+    </div>
+
+    <div class="card">
+      <img src="https://wallpapercave.com/wp/wp383267.jpg" alt="HUMAN">
+      <h3>BATMAN</h3>
+      <p>MY SUPERPOWERS? OH I'M RICH</p>
+      <p class="price">₹ERROR!NOT FOUND</p>
+    </div>
+
+    <div class="card">
+      <img src="https://wallpaperaccess.com/full/1110027.jpg" alt="SUIT">
+      <h3>IRONMAN</h3>
+      <p>I'M IRONMAN</p>
+      <p class="price">₹900K</p>
+    </div>
+
+    <div class="card">
+      <img src="https://wallpapercave.com/wp/wp6548001.jpg" alt="INHUMAN">
+      <h3>THALA</h3>
+      <p>BOLE JO KOYAL BAGON ME</p>
+      <p class="price">₹200K</p>
+    </div>
+  </div>
+</body>
+</html>
